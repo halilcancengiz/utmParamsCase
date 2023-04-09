@@ -37,7 +37,7 @@ const HomePage = () => {
     if (isFormValid) {
       navigate(
         "/thank-you-page",
-        { state: { information: formValue, phone } },
+        { state: { information: formValue, phone } || {} },
         { replace: true }
       );
     }

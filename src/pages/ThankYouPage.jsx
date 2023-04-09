@@ -5,9 +5,10 @@ import thankyouImg from "../assets/images/ty.png";
 import { TiArrowBack } from "react-icons/ti";
 
 const ThankYouPage = () => {
-  const { state } = useLocation();
+  const location = useLocation();
+  const state = location.state || {};
   const [utmParams, setUtmParams] = useState({});
-  const { name, surname, address, email } = state.information;
+  const { name, surname, address, email } = state.information || {};
   const { phone } = state;
 
   useEffect(() => {
