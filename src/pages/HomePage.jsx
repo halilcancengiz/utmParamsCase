@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import {
-  checkValidateForm,
-  checkValidatePhoneNumber,
-} from "../utils/checkValidateHelper";
+import { checkValidateForm, checkValidatePhoneNumber} from "../utils/checkValidateHelper";
 import { saveUtmParamsToLocalStorage } from "../utils/saveUtmParamsToLocalStorageHelper";
 
 const HomePage = () => {
