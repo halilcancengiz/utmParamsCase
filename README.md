@@ -22,11 +22,16 @@
 <p>Utm parametrelerini url de yakalayıp localstorage a kaydediyor. Form alanında gerekli validasyon işlemleri yapıldıktan sonra eğer bir sorun yoksa /thank-you-page sayfasına yönlendiriliyor. En sonunda girilen utm parametreleri ve form bilgileri ekranda gösteriliyor.</p>
 
 <h3 style="text-align:center;text-transform:capitalize;margin:10px">--Dosya Yapısı--</h3>
-<img hegiht="200px" src="./src/assets/appMDImages/folder.png">
+
+
+![Örnek Görüntü](./src/assets/appMdImages/folder.png)
 
 
 <h3 style="text-align:center;text-transform:capitalize;margin:10px">--Uygulama İçi Görüntüler--</h3>
 <div style="text-align:center;">
-<img src="./src/assets/appMDImages/home.png">
-<img src="./src/assets/appMDImages/ty.png">
+
+![Örnek Görüntü](./src/assets/appMdImages/home.png)
+
+![Örnek Görüntü](./src/assets/appMdImages/ty.png)
+
 </div>
