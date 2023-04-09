@@ -30,8 +30,8 @@
 <h3 style="text-align:center;text-transform:capitalize;margin:10px">--Uygulama İçi Görüntüler--</h3>
 <div style="text-align:center;">
 
-![Örnek Görüntü](./src/assets/appMdImages/home.png)
+![LeadForm](./src/assets/appMdImages/home.png)
 
-![Örnek Görüntü](./src/assets/appMdImages/ty.png)
+![ThanksPage](./src/assets/appMdImages/ty.png)
 
 </div>
