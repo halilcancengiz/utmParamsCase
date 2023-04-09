@@ -6,9 +6,10 @@ import { TiArrowBack } from "react-icons/ti";
 
 const ThankYouPage = () => {
   const location = useLocation();
+  console.log(location.state.information);
   const state = location.state || {};
   const [utmParams, setUtmParams] = useState({});
-  const { name, surname, address, email } = state.information || {};
+  const { name, surname, address, email } = location.state.information || {};
   const { phone } = state;
 
   useEffect(() => {
