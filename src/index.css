@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.react-tel-input {
+  width: 100% !important;
+  margin-top: 8px !important;
+}
+.special-label,
+.form-control {
+  width: 100% !important;
+  height: 64px !important;
+  border: none !important;
+  background: #334155 !important;
+  color: white;
+  border-radius: 8px!important;
+}
+.flag-dropdown,
+.open {
+  background: #334155 !important;
+  border: none !important;
+  border-radius: 8px!important;
+}
+.selected-flag:hover {
+  background: #334155 !important;
+  border-radius: 8px!important;
+}
+#backgroundHome{
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('https://source.unsplash.com/random');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
