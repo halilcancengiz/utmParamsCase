@@ -12,28 +12,33 @@
 .react-tel-input {
   width: 100% !important;
   margin-top: 8px !important;
+  border-radius: 8px;
+}
+.react-tel-input:focus-within{
+  border: 1px solid rgb(96 165 250);
+  border-radius: 8px;
 }
 .special-label,
 .form-control {
   width: 100% !important;
   height: 64px !important;
   border: none !important;
-  background: #334155 !important;
+  background: linear-gradient(to right,rgba(40, 42 ,55,.7),rgba(40, 42 ,55,.7)) !important;
   color: white;
   border-radius: 8px!important;
 }
 .flag-dropdown,
 .open {
-  background: #334155 !important;
+  background: linear-gradient(to right,rgba(40, 42 ,55,.7),rgba(40, 42 ,55,.7)) !important;
   border: none !important;
   border-radius: 8px!important;
 }
 .selected-flag:hover {
-  background: #334155 !important;
+  background: linear-gradient(to right,rgba(40, 42 ,55,.7),rgba(40, 42 ,55,.7)) !important;
   border-radius: 8px!important;
 }
-#backgroundHome{
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.3)),url('https://source.unsplash.com/random');
+.backgroundHome{
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://w0.peakpx.com/wallpaper/400/451/HD-wallpaper-plant-leaves-water-drops-dark-background-nature.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

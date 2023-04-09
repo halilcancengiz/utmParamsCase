@@ -20,7 +20,7 @@ const HomePage = () => {
     name: "",
     surname: "",
     email: "",
-    adress: "",
+    address: "",
   });
 
   // FUNCTIONS
@@ -30,7 +30,7 @@ const HomePage = () => {
       formValue.name,
       formValue.surname,
       formValue.email,
-      formValue.adress,
+      formValue.address,
       phone,
       phoneNumberValidate
     );
@@ -55,16 +55,15 @@ const HomePage = () => {
 
   return (
     <div
-      id="backgroundHome"
-      className="flex items-center   justify-center min-h-screen flex-col font-serif bg-dark"
+      className="flex items-center backgroundHome justify-center min-h-screen flex-col font-serif bg-dark "
     >
-      <h1 className="text-4xl border-b-2 border-b-blue-400 pb-2 text-white">
+      <h1 className="text-4xl border-b-2 border-white pb-2 text-white">
         Lead From
       </h1>
 
       <form onSubmit={handleSubmit} className="my-5 max-w-[500px]">
         <div className="flex gap-2">
-          <div className="flex flex-col bg-slate-700 w-full rounded-lg border border-transparent focus-within:border-blue-400">
+          <div className="flex flex-col bg-halfdark w-full rounded-lg border border-transparent focus-within:border-blue-400">
             <label className="text-white px-3 text-xs mt-2" htmlFor="name">
               Name
             </label>
@@ -78,7 +77,7 @@ const HomePage = () => {
             />
           </div>
 
-          <div className="flex flex-col bg-slate-700 w-full rounded-lg border border-transparent focus-within:border-blue-400">
+          <div className="flex flex-col bg-halfdark w-full rounded-lg border border-transparent focus-within:border-blue-400">
             <label className="text-white px-3 text-xs mt-2" htmlFor="surname">
               Surname
             </label>
@@ -93,7 +92,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="bg-slate-700 mt-2 rounded-lg border border-transparent focus-within:border-blue-400">
+        <div className="bg-halfdark mt-2 rounded-lg border border-transparent focus-within:border-blue-400">
           <label className="text-white px-3 text-xs" htmlFor="email">
             E-mail
           </label>
@@ -113,30 +112,28 @@ const HomePage = () => {
           onChange={handlePhoneNumber}
         />
 
-        <div className="mt-2 flex flex-col bg-slate-700 rounded-lg">
-          <label className="text-white px-3 text-xs mt-2" htmlFor="adress">
-            Adress
+        <div className="mt-2 flex flex-col bg-halfdark rounded-lg border border-transparent focus-within:border-blue-400">
+          <label className="text-white px-3 text-xs mt-2" htmlFor="address">
+            Address
           </label>
           <textarea
             onChange={handleChange}
-            className="resize-none w-full bg-slate-700 h-40 rounded-lg outline-none px-3 text-white py-2"
-            name="adress"
-            value={formValue.adress}
-            id="adress"
+            className="resize-none w-full bg-transparent h-40 rounded-lg outline-none px-3 text-white py-2"
+            name="address"
+            value={formValue.address}
+            id="address"
             cols="30"
             rows="10"
           ></textarea>
         </div>
 
         <div className="flex gap-2 mt-2">
-          <input
-            className="h-10 bg-blue-800 text-white w-1/2 rounded-lg"
-            type="reset"
-          />
-          <input
-            className="h-10 bg-blue-800 text-white w-1/2 rounded-lg"
+          <button
+            className="h-10 z-10 bg-halfdark relative after:transition-all after:z-[-1] after:opacity-50 after:duration-500 text-white w-full rounded-lg after:content[''] after:w-0 after:h-full after:absolute after:left-0 after:top-0 after:rounded-lg hover:after:w-full   after:bg-blue-400 "
             type="submit"
-          />
+          >
+            <span className="z-30 font-bold">Send</span>
+          </button>
         </div>
       </form>
     </div>

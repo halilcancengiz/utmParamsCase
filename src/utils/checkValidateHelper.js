@@ -7,8 +7,8 @@ import {
 import { emailRegexp } from "./regexHelper";
 
 
-export const checkValidateForm = (name, surname, email, adress, phoneNumber, isValidNumber) => {
-    if (name === "" || surname === "" || email === "" || adress === "" || phoneNumber === "") {
+export const checkValidateForm = (name, surname, email, address, phoneNumber, isValidNumber) => {
+    if (name === "" || surname === "" || email === "" || address === "" || phoneNumber === "") {
         toast.error("Lütfen Tüm alanları doldurunuz")
         return false
     }
@@ -23,7 +23,6 @@ export const checkValidateForm = (name, surname, email, adress, phoneNumber, isV
         return false
     }
     else {
-        toast.success("İşlem başarılı")
         return true
     }
 }
